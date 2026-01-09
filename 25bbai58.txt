@@ -1,0 +1,35 @@
+create database ibrahim;
+use ibrahim;
+
+insert into ticket(name) values('abc'),
+('ijk');
+
+
+create table emplo(emp_id varchar(30),
+emp_name varchar(50),
+emp_designation varchar(50),
+emp_age int);
+
+
+
+insert into emplo
+(emp_id,emp_name,emp_designation,emp_age)
+values(
+1,'a','hr',26),
+(2,'b','ds',34),
+(3,'c','da',32),
+(4,'d','se',35),
+('e5','t','de',45);
+
+update emplo set emp_name='ad',emp_age=24 
+where emp_id=1;
+
+update emplo set emp_designation='ds'
+where emp_id=2;
+
+delete from emplo where emp_id='e5';
+
+delete from emplo where emp_age='26';
+
+alter table emplo add emp_dept varchar(30), 
+add emp_location varchar(25);
