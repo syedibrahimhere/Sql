@@ -1,0 +1,13 @@
+create database pavan;
+use pavan;
+select*from phone;
+select distinct(processor_brand) from phone;
+select distinct(model) from phone;
+select count(distinct (model))from phone;
+select count(distinct (processor_brand)) from phone;
+update phone set processor_brand='mediatek'
+where processor_brand="dimesity"
+select * from phone where price>200000;
+select max(price) from phone;
+
+ 
